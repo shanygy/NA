@@ -21,6 +21,7 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -34,20 +35,41 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header>
-	
+	Noten Avoda Logo
+	<button id="fb-login">FB Login</button>
   </header>
-  <div role="main">
-	
-  </div>
-  <footer>
 
+	<nav id="main-nav">
+		<ul class="clearfix">
+			<li class="selected"><a href="#" title="Girl Feed">New Jobs</a></li>
+			<li><a href="#" title="Random Girl">Toss a Girl!</a></li>
+			<li><a href="#" title="Most Popular Girls">Loads of Work</a></li>
+			<li><a href="#" title="Uploads of Your Friends">Hot Positions</a></li>
+		</ul>
+	</nav>
+	<button id="surprise">SPAWN!</button>
+  <div id="container" class="clearfix">
+		<div id="main" role="main">
+			<article class="art-girl">
+				<img src="img/Shany1.JPG" />
+			</article>
+		</div>
+		
+		<aside>
+			<p> FUTURISTIC SIDEBAR </p>
+		</aside>
+	</div>
+	
+  <footer>
+	footer
   </footer>
 
 
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!-- Shany: unmark on when working with a server -->
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via build script -->
@@ -57,11 +79,13 @@
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
+  
+	<!-- Shany: unmark on when working with a server -->
+	<!-- <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+  </script> -->
 </body>
 </html>
