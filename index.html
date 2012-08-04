@@ -48,7 +48,6 @@
   </header>
 
   <div id="container" class="clearfix">
-		<button id="surprise">SPAWN!</button>
 		<div id="main" role="main">
 		</div>
 		
@@ -66,7 +65,7 @@
 	<script type="text/html" id="girlListItem">
 		<article class="art-girl clearfix">
 			<div class="img-wrapper">
-				<img src="img/<%= fileName %>" />
+				<img class="lazy" src="img/grey.gif" data-original="img/<%= fileName %>" />
 			</div>
 			<div class="choose-box">
 				<a class="choose-button noten" href="javascript: void(0);">Noten!</a>
