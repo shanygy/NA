@@ -7,14 +7,16 @@ body {
 }
 
 header {
-	width: 100%;
+	padding: 0 40px; width: 100%;
+	box-sizing: border-box;
 	background-color: #333745;
 	position: fixed; top: 0;
 	color: #77C4D3; line-height: 50px;
+	
 	-mox-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
 	-webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
 	box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.8);
-
+	
 	z-index: 10;
 }
 
@@ -22,12 +24,22 @@ a, a:visited, a:hover {
 	text-decoration: none; 
 }
 
+#logo {
+	float: left;
+	color: #77C4D3; font-weight: bold;
+}
+
+#fb-login {
+	float: right;
+}
+
 #main-nav {
-	background-color: #77C4D3;
-	line-height: 50px; font-weight: bold;
+	margin-left: 20px;
+	float: left;
+	font-size: 13px; font-weight: bold;
 }
 #main-nav li { 
-	padding: 0 10px;
+	padding: 0 5px;
 	float: left;
 	position: relative;
 }
@@ -81,7 +93,7 @@ a, a:visited, a:hover {
 }
 
 .art-girl {
-	padding: 30px 0; border: 1px solid #c8d3d8; border-bottom: none;
+	padding: 30px 0; border: 1px solid #c8d3d8; border-top: none;
 	background-color: #fff;
 	text-align: center;
 }
