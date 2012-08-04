@@ -3,13 +3,13 @@
 */
 
 $(function() {
-	var strArtGirl = '<article class="art-girl"><img src="/" /></article>';
+	var girlTemplate = $('#girlListItem').html();
 	
 	$('#surprise').click(function() {
-		var imgId = Math.ceil(Math.random() * 5), artGirl;
+		var imgId = Math.ceil(Math.random() * 14), 
+				fileName = 'img' + imgId + '.JPG';
 		
-		artGirl = strArtGirl.replace('src="/"', 'src=img/shany' + imgId + '.JPG');
-		$('#main').append($(artGirl));		
+		$("#main").append(_.template(girlTemplate, { fileName: fileName }));
 	});
 });
 

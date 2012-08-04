@@ -48,12 +48,8 @@
   </header>
 
   <div id="container" class="clearfix">
+		<button id="surprise">SPAWN!</button>
 		<div id="main" role="main">
-			<article class="art-girl">
-				<a class="noten" href="javascript: void(0);">Noten!</a>
-				<img src="img/Shany1.JPG" />
-				<a class="no-noten" href="javascript: void(0);">Lo Noten</a>
-			</article>
 		</div>
 		
 		<aside>
@@ -67,6 +63,17 @@
 
 
   <!-- JavaScript at the bottom for fast page loading -->
+	<script type="text/html" id="girlListItem">
+		<article class="art-girl clearfix">
+			<div class="img-wrapper">
+				<img src="img/<%= fileName %>" />
+			</div>
+			<div class="choose-box">
+				<a class="choose-button noten" href="javascript: void(0);">Noten!</a>
+				<a class="choose-button no-noten" href="javascript: void(0);">Lo Noten</a>
+			</div>
+		</article>
+	</script>
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
 	<!-- Shany: unmark on when working with a server -->
