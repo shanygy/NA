@@ -1,0 +1,16 @@
+aside, footer { outline: 1px solid #000; }
+
+#girl-post header {
+	border: 1px solid #EA2E49; border-bottom: none;	padding: 0 30px;
+	background-color: #EA2E49;
+	color: #F6F792;	font-size: 25px; font-weight: bold;	line-height: 65px; text-shadow: 2px 2px 4px black;
+	border-radius: 14px 14px 0 0;
+	
+	-mox-box-shadow: inset 1px 1px 2px 0px rgba(255, 255, 255, 0.6),inset -1px -1px 2px 0px rgba(255, 255, 255, 0.6);
+	-webkit-box-shadow: inset 1px 1px 2px 0px rgba(255, 255, 255, 0.6),inset -1px -1px 2px 0px rgba(255, 255, 255, 0.6);
+	box-shadow: inset 1px 1px 2px 0px rgba(255, 255, 255, 0.6),inset -1px -1px 2px 0px rgba(255, 255, 255, 0.6);
+}
+#girl-post .contents { border: 1px solid #EA2E49; }
+#girl-post .photo {
+	max-width: 100%; max-height: 400px;
+}
