@@ -1,16 +1,51 @@
 aside, footer { outline: 1px solid #000; }
 
+.outline {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.7);
+	box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.7);
+}
+
 #girl-post header {
 	border: 1px solid #EA2E49; border-bottom: none;	padding: 0 30px;
 	background-color: #EA2E49;
-	color: #F6F792;	font-size: 25px; font-weight: bold;	line-height: 65px; text-shadow: 2px 2px 4px black;
 	border-radius: 14px 14px 0 0;
 	
 	-mox-box-shadow: inset 1px 1px 2px 0px rgba(255, 255, 255, 0.6),inset -1px -1px 2px 0px rgba(255, 255, 255, 0.6);
 	-webkit-box-shadow: inset 1px 1px 2px 0px rgba(255, 255, 255, 0.6),inset -1px -1px 2px 0px rgba(255, 255, 255, 0.6);
 	box-shadow: inset 1px 1px 2px 0px rgba(255, 255, 255, 0.6),inset -1px -1px 2px 0px rgba(255, 255, 255, 0.6);
 }
-#girl-post .contents { border: 1px solid #EA2E49; }
+#girl-post h1 {
+	float: left;
+	color: #F6F792;	font-size: 25px; font-weight: bold;	text-shadow: 2px 2px 4px black;
+}
+#girl-post .vote-wrapper {
+	float: right;
+	line-height: 78px;
+}
+#girl-post .vote {
+	
+}
+#girl-post .contents { 
+	border: 1px solid #EA2E49; 
+	padding: 0 30px;
+}
+#girl-post nav ul { 
+	float: right; 
+}
+#girl-post nav li {
+	margin-left: 5px;
+	float: left;
+} 
+#girl-post .photo-wrapper { clear: both; }
 #girl-post .photo {
 	max-width: 100%; max-height: 400px;
+	float: left;
+}
+#description {
+	min-height: 240px;
+	min-width: 280px;
+	margin-left: 30px;
+	float: right;
 }
